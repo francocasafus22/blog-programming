@@ -42,7 +42,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-background border-b border-border sticky w-full z-50 text-foreground">
+    <nav className="bg-transparent border-b border-border sticky w-full z-50 text-foreground shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -82,7 +82,7 @@ export default function Navbar() {
 
               {/* Menu desplegable */}
               <div
-                className={`fixed top-16 left-2 right-2 bg-white/10 backdrop-blur-md shadow-lg border border-border rounded-lg p-4 transition-all duration-300 ease-in-out ${
+                className={`fixed top-16 left-2 right-2 bg-popover/50 backdrop-blur-md shadow-lg border border-border rounded-lg p-4 transition-all duration-300 ease-in-out ${
                   open
                     ? "opacity-100 scale-100"
                     : "opacity-0 scale-95 pointer-events-none"
